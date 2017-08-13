@@ -16,8 +16,8 @@ function deepestChild() {
 function increaseRankBy (n) {
   let ranked = document.querySelector('.ranked-list')
   let bullets = ranked.querySelectorAll('li')
-  for (item in bullets) {
-    let i = bullets[item].innerText
+  bullets.forEach(function(e)) {
+    let i = e.innerText
     let iNumber = parseInt(i,10)
     iNumber += 1
     bullets[item].innerText = iNumber
