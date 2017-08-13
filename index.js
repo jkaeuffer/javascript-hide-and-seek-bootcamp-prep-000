@@ -11,12 +11,17 @@ function nestedTarget() {
 }
 
 function deepestChild() {
-  let current = document.querySelector('div#grand-node')
-  let next = []
-  while (current.children) {
-    next = current.children
-    current = next
+  let visited = [document.querySelector('div#grand-node')]
+  let queue = [document.querySelector('div#grand-node')]
+  while queue.length > 0 {
+    if (queue[0].children) {
+      queue.push(queue[0].children])
+      queue.splice(0,1)
+      visited.push(queue[0])
+    }
   }
+  
+  
 }
 function increaseRankBy (n) {
   let target = document.querySelectorAll('.ranked-list')
