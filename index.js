@@ -11,7 +11,7 @@ function nestedTarget() {
 }
 
 function deepestChild() {
-  let lastVisited = document.getElementById('#grand-node')
+  let lastVisited = document.getElementById('grand-node')
   let next = lastVisited.children[0]
   while (next) {
     lastVisited = next
