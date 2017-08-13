@@ -12,6 +12,7 @@ function nestedTarget() {
 
 function deepestChild() {
   let current = 'div#grand-node'
+  let next = []
 }
 function increaseRankBy (n) {
   let target = document.querySelectorAll('.ranked-list')
