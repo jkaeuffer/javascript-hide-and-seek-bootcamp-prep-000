@@ -11,8 +11,8 @@ function nestedTarget() {
 }
 
 function deepestChild() {
-  let visited = ['div#grand-node']
-  let queue = ['div#grand-node']
+  let visited = document.querySelectorAll('div#grand-node')
+  let queue = visited.children[0]
   while (queue.length > 0) {
     if (document.querySelectorAll(queue[0]).children) {
       queue.push(queue[0].children)
