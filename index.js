@@ -15,11 +15,10 @@ function deepestChild() {
 }
 function increaseRankBy (n) {
   let bullets = document.querySelectorAll('li')
-  bullets.forEach(function(e) {
-    let i = e.innerText
-    let iNumber = parseInt(i,10)
-    iNumber += n
-    e.innerText = iNumber
-  })
+  for (let i = 0; i < bullets.length; i++) {
+    let number = parseInt(bullets[i].innerText,10)
+    number += n
+    bullets[i].innerText = number
+  }
 
 }
