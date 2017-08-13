@@ -18,6 +18,7 @@ function deepestChild() {
     queue = visited.children[0]
   }
   return queue
+}
 
 function increaseRankBy (n) {
   let target = document.querySelectorAll('.ranked-list')
