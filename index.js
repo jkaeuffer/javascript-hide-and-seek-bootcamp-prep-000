@@ -14,6 +14,7 @@ function deepestChild() {
   let visited = document.querySelectorAll('div#grand-node')
   let queue = visited.children[0]
   while (queue) {
+    visited = queue
 }
 
 function increaseRankBy (n) {
