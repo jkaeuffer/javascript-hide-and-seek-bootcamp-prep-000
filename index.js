@@ -19,7 +19,7 @@ function increaseRankBy (n) {
   bullets.forEach(function(e) {
     let i = e.innerText
     let iNumber = parseInt(i,10)
-    iNumber += 1
+    iNumber += n
     e.innerText = iNumber
   })
 
