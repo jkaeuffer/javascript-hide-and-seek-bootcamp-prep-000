@@ -15,7 +15,7 @@ function deepestChild() {
   let queue = [document.querySelector('div#grand-node')]
   while (queue.length > 0) {
     if (queue[0].children) {
-      queue.push(queue[0].children])
+      queue.push(queue[0].children)
       queue.splice(0,1)
       visited.push(queue[0])
     }
