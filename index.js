@@ -13,19 +13,7 @@ function nestedTarget() {
 function deepestChild() {
   let visited = document.querySelectorAll('div#grand-node')
   let queue = visited.children[0]
-  while (queue.length > 0) {
-    if (document.querySelectorAll(queue[0]).children) {
-      queue.push(queue[0].children)
-      queue.splice(0,1)
-      visited.push(queue[0])
-    }
-    else {
-      queue.splice(0,1)
-      visited.push(queue[0])
-    }
-  }
-  let element = visited.slice(-1,1)
-  return element[0]
+  while (queue) {
 }
 
 function increaseRankBy (n) {
