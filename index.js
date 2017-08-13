@@ -15,6 +15,7 @@ function deepestChild() {
   let next = []
   while (current.children) {
     next = current.children
+    current = next
   }
 }
 function increaseRankBy (n) {
