@@ -23,6 +23,7 @@ function deepestChild() {
       queue.splice(0,1)
       visited.push(queue[0])
     }
+    return visited[-1]
   }
 
 
