@@ -19,9 +19,13 @@ function deepestChild() {
       queue.splice(0,1)
       visited.push(queue[0])
     }
+    else {
+      queue.splice(0,1)
+      visited.push(queue[0])
+    }
   }
-  
-  
+
+
 }
 function increaseRankBy (n) {
   let target = document.querySelectorAll('.ranked-list')
