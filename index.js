@@ -27,7 +27,6 @@ function deepestChild() {
   return visited[-1]
 }
 
-}
 function increaseRankBy (n) {
   let target = document.querySelectorAll('.ranked-list')
   for (let i = 0; i< target.length; i++) {
