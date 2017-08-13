@@ -21,5 +21,5 @@ function increaseRankBy (n) {
     number += n
     bullets[i].innerText = number
   }
-
+  return bullets
 }
