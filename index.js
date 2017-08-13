@@ -15,7 +15,7 @@ function deepestChild() {
   let next = lastVisited.children[0]
   while (next) {
     lastVisited = next
-    next = lastVisited[0].children[0]
+    next = lastVisited.children[0]
   }
   return lastVisited
 }
