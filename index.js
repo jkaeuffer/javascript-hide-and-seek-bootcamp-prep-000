@@ -24,7 +24,7 @@ function deepestChild() {
       visited.push(queue[0])
     }
   }
-  return visited[-1]
+  return visited.slice(-1,1)[0]
 }
 
 function increaseRankBy (n) {
