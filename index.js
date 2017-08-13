@@ -12,12 +12,12 @@ function nestedTarget() {
 
 function deepestChild() {
   let lastVisited = document.querySelectorAll('div#grand-node')
-  let next = visited.children[0]
-  while (queue) {
-    visited = queue
-    queue = visited.children[0]
+  let next = lastVisited.children[0]
+  while (next) {
+    lastVisited = next
+    next = lastVisited.children[0]
   }
-  return visited
+  return lastVisited
 }
 
 function increaseRankBy (n) {
