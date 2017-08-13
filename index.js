@@ -15,6 +15,7 @@ function deepestChild() {
   let queue = visited.children[0]
   while (queue) {
     visited = queue
+    queue = visited.children[0]
 }
 
 function increaseRankBy (n) {
