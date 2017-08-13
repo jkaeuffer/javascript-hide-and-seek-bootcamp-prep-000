@@ -18,6 +18,6 @@ function increaseRankBy (n) {
   for (let i = 0; i< target.length; i++) {
     let bullets = target[i].querySelectorAll('li')
     for (let j = 0; j < bullets.length; j++) {
-      bullets[i].innerHTML = parseInt(bullets[i].innerHTML) + n
+      bullets[j].innerHTML = parseInt(bullets[j].innerHTML) + n
   }}
 }
