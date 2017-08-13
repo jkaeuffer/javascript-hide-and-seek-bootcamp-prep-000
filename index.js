@@ -11,11 +11,11 @@ function nestedTarget() {
 }
 
 function deepestChild() {
-  let lastVisited = document.querySelectorAll('div#grand-node')
+  let lastVisited = document.getElementById('#grand-node')
   let next = lastVisited.children[0]
   while (next) {
     lastVisited = next
-    next = lastVisited.children[0]
+    next = lastVisited[0].children[0]
   }
   return lastVisited
 }
