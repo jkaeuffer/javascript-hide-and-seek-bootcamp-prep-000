@@ -17,7 +17,7 @@ function deepestChild() {
     visited = queue
     queue = visited.children[0]
   }
-  return queue
+  return visited
 }
 
 function increaseRankBy (n) {
