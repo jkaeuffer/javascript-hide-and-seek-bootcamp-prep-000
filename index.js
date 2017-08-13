@@ -9,7 +9,7 @@ function nestedTarget() {
   return target
 
 }
-
+console.log(document.querySelector('.ranked-lists'))
 function deepestChild() {
 
 }
