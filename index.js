@@ -25,7 +25,7 @@ function deepestChild() {
     }
     return visited[-1]
   }
-
+}
 
 }
 function increaseRankBy (n) {
